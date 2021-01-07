@@ -1,7 +1,21 @@
 import tkinter as tk
 from random import randint
 
+##################################### Variables #####################################
+
+
+width, height = 0, 0
+pad_x, pad_y = 6, 0
+calcule = 0
+
+A = 0
+B = 0
+res = 0
+op = ""
+dec = 0
+
 ##################################### Fonctions #####################################
+
 
 def button0():
     global A, B, res, dec
@@ -276,19 +290,8 @@ def clear():
     affichage.config(text = "0")
 
 
-##################################### Variables #####################################
-
-width, height = 0, 0
-pad_x, pad_y = 6, 0
-calcule = 0
-
-A = 0
-B = 0
-res = 0
-op = ""
-dec = 0
-
 ##################################### Fenetre #####################################
+
 
 racine = tk.Tk()
 racine.title("Calculatrice")
